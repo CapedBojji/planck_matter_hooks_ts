@@ -1,0 +1,41 @@
+{
+  "name": "@rbxts/planck-matter-hooks",
+  "version": "0.1.0-rc.1",
+  "description": "A Plugin for Planck, adding support for matter hooks.",
+  "main": "out/init.luau",
+  "types": "out/index.d.ts",
+  "keywords": [
+    "matter-ecs",
+    "@rbxts/matter",
+    "jecs",
+    "ecr",
+    "roblox-ts",
+    "roblox ts",
+    "@rbxts/planck",
+    "@rbxts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yetanotherclown/planck"
+  },
+  "scripts": {
+    "build": "rbxtsc",
+    "watch": "rbxtsc -w",
+    "prepublishOnly": "pnpm run build"
+  },
+  "homepage": "https://yetanotherclown.github.io/planck/docs/plugins/jabby",
+  "files": [
+    "out",
+    "!out/tsconfig.tsbuildinfo",
+    "pnpm-lock.yaml"
+  ],
+  "author": "YetAnotherClown",
+  "license": "MIT",
+  "devDependencies": {
+    "@rbxts/compiler-types": "3.0.0-types.0",
+    "@rbxts/planck": "0.1.0-rc.3",
+    "@rbxts/types": "^1.0.813",
+    "roblox-ts": "^3.0.0",
+    "typescript": "^5.7.2"
+  }
+}
