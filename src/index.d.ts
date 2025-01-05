@@ -1,9 +1,9 @@
-import { Scheduler } from "./types";
+import { Plugin, Scheduler } from "@rbxts/planck/out/types";
 
 
-declare class Plugin<T extends unknown[] = unknown[]> {
+declare class PlanckMatterHooksPlugin implements Plugin {
     constructor(module: ModuleScript)
-    build(scheduler: Scheduler<T>): void;
+    build<T extends unknown[]>(scheduler: Scheduler<T>): void;
 }
 
-export = Plugin;
+export = PlanckMatterHooksPlugin;
